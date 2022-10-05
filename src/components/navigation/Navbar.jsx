@@ -6,13 +6,17 @@ function MainNavbar() {
   return (
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-          </Nav>
+          <Navbar.Brand href="#home">My <img
+              alt=""
+              src="logo192.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}Portfolio
+            </Navbar.Brand>
           <Nav>            
-            <Nav.Link href="#features">Linkedin</Nav.Link>
-            <Nav.Link href="#pricing">Github</Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/" target="_blank">LinkedIn</Nav.Link>
+            <Nav.Link href="https://github.com/szotaksimon/REACT-portfolio" target="_blank">GitHub</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
