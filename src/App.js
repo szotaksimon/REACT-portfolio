@@ -2,10 +2,10 @@ import MainNavbar from "./components/navigation/Navbar";
 
 function App() {
   return (
-      <>
-        <MainNavbar />
-      </>
-    );
+    <>
+      <MainNavbar />
+    </>
+  );
 }
 
 export default App;
