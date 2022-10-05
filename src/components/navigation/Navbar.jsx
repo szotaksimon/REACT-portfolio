@@ -1,10 +1,11 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import classes from '../../styles/navbar/navbar.module.scss'
 
 function MainNavbar() {
   return (
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" className={classes.navbar}>
         <Container>
           <Navbar.Brand href="#home">My <img
               alt=""
