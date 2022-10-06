@@ -7,17 +7,17 @@ function MainNavbar() {
   return (
       <Navbar bg="dark" variant="dark" className={classes.navbar}>
         <Container>
-          <Navbar.Brand href="#home">My <img
+          <Navbar.Brand href="#home" className={classes.brand}>My <img
               alt=""
               src="logo192.png"
               width="30"
               height="30"
-              className="d-inline-block align-top"
+              className={classes.title}
             />{' '}Portfolio
             </Navbar.Brand>
           <Nav>            
-            <Nav.Link href="https://www.linkedin.com/" target="_blank">LinkedIn</Nav.Link>
-            <Nav.Link href="https://github.com/szotaksimon/REACT-portfolio" target="_blank">GitHub</Nav.Link>
+            <Nav.Link className={classes.link} href="https://www.linkedin.com/" target="_blank">LinkedIn</Nav.Link>
+            <Nav.Link className={classes.link} href="https://github.com/szotaksimon/REACT-portfolio" target="_blank">GitHub</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

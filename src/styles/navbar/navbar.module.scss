@@ -1,3 +1,16 @@
-.navbar{
-    margin-bottom: 70px;
+.navbar {
+  margin-bottom: 70px;
+  .brand {
+    .title {
+      display: inline-block;
+      vertical-align: top;
+      color: white;
+    }
+  }
+  .link {
+    color: rgb(194, 194, 194);
+    &:hover {
+      color: rgb(142, 136, 255);
+    }
+  }
 }
