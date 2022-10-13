@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import classes from "../../styles/navbar/navbar.module.scss";
 
 function MainNavbar() {
@@ -14,15 +15,16 @@ function MainNavbar() {
         />
         Portfolio
       </div>
-      <a href="#" className={classes.toggleB}>
+      <Link to="#" className={classes.toggleB}>
+        // eslint-disable-next-line
         <span className={classes.bar}></span>
         <span className={classes.bar}></span>
         <span className={classes.bar}></span>
-      </a>
+      </Link>
       <div className={classes.navLinks}>
         <ul>
           <li>
-            <a href="http://localhost:3000/">Home</a>
+            <Link to="/test">Test</Link>
           </li>
           <li>
             <a href="https://www.linkedin.com/" target="blank">
