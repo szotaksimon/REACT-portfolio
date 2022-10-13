@@ -1,4 +1,5 @@
 .navbar {
+  font-family: "Times New Roman", Times, serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,12 +7,13 @@
   color: white;
   padding-inline-start: 5%;
   padding-inline-end: 5%;
+  margin-bottom: 70px;
   .brand {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0.5rem;
     .title {
       display: inline-block;
-      vertical-align: top;
+      vertical-align: inline;
       color: white;
     }
   }
@@ -24,13 +26,16 @@
     li {
       list-style: none;
       &:hover {
-        background-color: #333;
+        a {
+          color: #61dbfb;
+          transition-duration: 0.15s;
+        }
       }
       a {
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: white;
-        padding: 1.5rem;
+        padding: 1.3rem;
         display: block;
       }
     }
@@ -48,7 +53,7 @@
       height: 3px;
       width: 100%;
       background-color: white;
-      border-radius: 10px;
+      border-radius: 6px;
     }
   }
 }

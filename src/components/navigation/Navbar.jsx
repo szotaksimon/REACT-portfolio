@@ -1,12 +1,17 @@
 import classes from "../../styles/navbar/navbar.module.scss";
 
-
 function MainNavbar() {
   return (
     <nav className={classes.navbar}>
       <div className={classes.brand}>
         My
-        <img alt="React" src="logo192.png" width="40" height="40" className={classes.title} />
+        <img
+          alt="React"
+          src="logo192.png"
+          width="38"
+          height="38"
+          className={classes.title}
+        />
         Portfolio
       </div>
       <a href="#" className={classes.toggleB}>
@@ -17,35 +22,24 @@ function MainNavbar() {
       <div className={classes.navLinks}>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="http://localhost:3000/">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="https://www.linkedin.com/" target="blank">
+              LinkedIn
+            </a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a
+              href="https://github.com/szotaksimon/REACT-portfolio"
+              target="blank"
+            >
+              GitHub
+            </a>
           </li>
         </ul>
       </div>
     </nav>
-
-
-    // <Navbar bg="dark" variant="dark" classNameName={classes.navbar}>
-    //   <Container>
-    //     <Navbar.Brand href="#home" className={classes.brand}>My <img
-    //         alt=""
-    //         src="logo192.png"
-    //         width="30"
-    //         height="30"
-    //         className={classes.title}
-    //       />{' '}Portfolio
-    //       </Navbar.Brand>
-    //     <Nav>
-    //       <Nav.Link className={classes.link} href="https://www.linkedin.com/" target="_blank">LinkedIn</Nav.Link>
-    //       <Nav.Link className={classes.link} href="https://github.com/szotaksimon/REACT-portfolio" target="_blank">GitHub</Nav.Link>
-    //     </Nav>
-    //   </Container>
-    // </Navbar>
   );
 }
 
