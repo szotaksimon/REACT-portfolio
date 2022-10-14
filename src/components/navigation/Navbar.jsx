@@ -4,17 +4,19 @@ import classes from "../../styles/navbar/navbar.module.scss";
 function MainNavbar() {
   return (
     <nav className={classes.navbar}>
-      <div className={classes.brand}>
-        My
-        <img
-          alt="React"
-          src="logo192.png"
-          width="38"
-          height="38"
-          className={classes.title}
-        />
-        Portfolio
-      </div>
+      <Link to="/home">
+        <div className={classes.brand}>
+          My
+          <img
+            alt="React"
+            src="logo192.png"
+            width="38"
+            height="38"
+            className={classes.title}
+          />
+          Portfolio
+        </div>
+      </Link>
       <Link to="#" className={classes.toggleB}>
         // eslint-disable-next-line
         <span className={classes.bar}></span>
