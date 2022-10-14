@@ -1,11 +1,10 @@
 import MainNavbar from "./components/navigation/Navbar"
-import Card from "./components/cards/Card"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+
 import Container from "react-bootstrap/Container"
 import classes from "./styles/app/app.module.scss"
 
 import Test from "./components/projects/Test"
+import Home from "./components/home/Home"
 import { Route, Routes } from "react-router-dom"
 
 function App() {
@@ -15,33 +14,8 @@ function App() {
       <Container className={classes.container}>
         <Routes>
           <Route path="/test" element={<Test />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
-        
-        
-        {/* <Row className={classes.row}>
-          <Col>
-            <Card />
-          </Col>
-          <Col>
-            <Card />
-          </Col>
-        </Row>
-        <Row className={classes.row}>
-          <Col>
-            <Card />
-          </Col>
-          <Col>
-            <Card />
-          </Col>
-        </Row>
-        <Row className={classes.row}>
-          <Col>
-            <Card />
-          </Col>
-          <Col>
-            <Card />
-          </Col>
-        </Row> */}
       </Container>
     </>
   );
