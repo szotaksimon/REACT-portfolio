@@ -1,3 +1,91 @@
 .navbar {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  -webkit-padding-start: 5%;
+          padding-inline-start: 5%;
+  -webkit-padding-end: 5%;
+          padding-inline-end: 5%;
   margin-bottom: 70px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover {
+  color: white;
+}
+.navbar .brand {
+  font-size: 1.8rem;
+  margin: 0.5rem;
+}
+.navbar .brand .title {
+  display: inline-block;
+  vertical-align: inline;
+  color: white;
+}
+.navbar .navLinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar .navLinks li {
+  list-style: none;
+}
+.navbar .navLinks li:hover a {
+  color: #61dbfb;
+  transition-duration: 0.15s;
+}
+.navbar .navLinks li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  padding: 1.3rem;
+  display: block;
+}
+.navbar .toggleB {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.navbar .toggleB .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .toggleB {
+    display: flex;
+  }
+  .navbar .navLinks {
+    display: none;
+    width: 100%;
+  }
+  .navbar .navLinks ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar .navLinks li {
+    text-align: center;
+  }
+  .navbar .navLinks li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar .navLinks .active {
+    display: flex;
+  }
 }/*# sourceMappingURL=navbar.module.css.map */
